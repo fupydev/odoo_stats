@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class cod_statv1(models.Model):
-#     _name = 'cod_statv1.cod_statv1'
-#     _description = 'cod_statv1.cod_statv1'
+class Plants(models.Model):
+    _name = "nursery.plant"
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
+    name = fields.Char("Plant name")
+    price = fields.Float()
+
+
+class Customer(models.Model):
+    _name = "nursery.customer"
+
+    name = fields.Char("Customer Name", required=True)
+    email = fields.Char(help="to receive news")

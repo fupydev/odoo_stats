@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_cod_statv1_cod_statv1,cod_statv1.cod_statv1,model_cod_statv1_cod_statv1,base.group_user,1,1,1,1
+access_nursery_plant,access_nursery_plant,model_nursery_plant,base.group_user,1,1,1,1,
+access_nursery_customer,access_nursery_customer,model_nursery_customer,base.group_user,1,1,1,1
